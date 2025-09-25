@@ -327,14 +327,30 @@ def main():
     
     print(Style.BRIGHT + Fore.GREEN + "\n🎉 All processes completed.")
 
+import sys
+
 if __name__ == "__main__":
-    times = int(input("Mau berapa kali swap + LP per wallet? "))
+    while True:
+        times = int(input("Mau berapa kali swap + LP per wallet? "))
 
-    for t in range(times):
-        print(f"\n=== Cycle {t+1} dari {times} ===\n")
-        main()
+        for t in range(times):
+            print(f"\n=== Cycle {t+1} dari {times} ===\n")
+            main()
 
-        if t < times - 1:
-            print("⏳ Tunggu 30 detik sebelum cycle berikutnya...")
-            time.sleep(30)
+            if t < times - 1:
+                print("⏳ Tunggu 5 detik sebelum cycle berikutnya...")
+                time.sleep(5)
+
+        print("\n✅ Semua cycle selesai. Bot akan jalan lagi setelah 24 jam...\n")
+
+        # Countdown 24 jam (86400 detik)
+        for remaining in range(86400, 0, -1):
+            hrs, rem = divmod(remaining, 3600)
+            mins, secs = divmod(rem, 60)
+            sys.stdout.write(f"\r⏳ Restart dalam: {hrs:02}:{mins:02}:{secs:02}")
+            sys.stdout.flush()
+            time.sleep(1)
+
+        print("\n🚀 Mulai cycle baru!\n")
+
 
