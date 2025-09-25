@@ -35,13 +35,3 @@ python3 run.py
 # Nanti akan muncul pertanyaan:
 # Mau berapa kali swap + LP per wallet?
 # Contoh input 5 → bot akan jalankan swap + LP sebanyak 5 kali per wallet
-Bot-giwa/
-├── run.py            # Script utama bot
-├── privatekey.txt    # File berisi private keys (jangan dishare!)
-├── requirements.txt  # Dependencies Python
-└── README.md         # Dokumentasi project
----
-
-Kalau kamu copy langsung ke **README.md** GitHub → tampilannya rapi, instruksi instalasi langsung dalam 1 blok, nggak kepotong-potong ✅  
-
-Mau aku bikinin sekalian isi `requirements.txt` biar user lain tinggal install tanpa error?
