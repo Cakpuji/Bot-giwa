@@ -328,4 +328,13 @@ def main():
     print(Style.BRIGHT + Fore.GREEN + "\n🎉 All processes completed.")
 
 if __name__ == "__main__":
-    main()
+    times = int(input("Mau berapa kali swap + LP per wallet? "))
+
+    for t in range(times):
+        print(f"\n=== Cycle {t+1} dari {times} ===\n")
+        main()
+
+        if t < times - 1:
+            print("⏳ Tunggu 30 detik sebelum cycle berikutnya...")
+            time.sleep(30)
+
