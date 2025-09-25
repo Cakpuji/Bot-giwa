@@ -39,6 +39,7 @@ nano privatekey.txt
 Isi dengan private key wallet kamu (satu baris = satu key), contoh:
 
 0xabc123456789abcdef...
+
 0xdef9876543210fedcba...
 
 Simpan file → keluar dengan CTRL+X, lalu tekan Y → Enter.
@@ -52,3 +53,5 @@ Saat dijalankan, nanti akan muncul pertanyaan:
 Mau berapa kali swap + LP per wallet?
 
 Contoh input 5 → bot akan jalankan swap + LP sebanyak 5 kali per wallet.
+
+Dan akan otomatis restart dalam 24 jam.
